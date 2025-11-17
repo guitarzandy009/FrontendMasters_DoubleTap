@@ -2,3 +2,7 @@ html {
     background-color: #333;
     color: hotpink;
 }
+
+h1, h2, h3 {
+    color: antiquewhite;
+}
