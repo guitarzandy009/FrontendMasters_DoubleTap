@@ -1,14 +1,48 @@
+:root {
+  --background: #0a0a0a;
+  --surface-cards: #1a1a1a;
+  --text: #ffffff;
+  --primary: #ff0080;
+
+  --links: #00d4ff;
+  --hover: #5ce1ff;
+  --visited: #b380ff;
+
+  --borders: #404040;
+  --disabled: #666666;
+  --success: #00ff88;
+  --warning: #ffcc00;
+  --error: #ff3366;
+}
+
 html {
-  background-color: #333;
-  color: hotpink;
+  background-color: var(--background);
+  color: var(--text);
 }
 
 h1,
 h2,
 h3 {
-  color: antiquewhite;
+  color: var(--primary);
 }
 
-section {
-  border: 1px dotted hotpink;
+section,
+header,
+footer {
+  border: 2px double var(--borders);
+  background-color: var(--surface-cards);
+  margin: 1rem;
+  padding: 1rem;
+}
+
+a {
+  color: var(--links);
+}
+
+a:hover {
+  color: var(--hover);
+}
+
+a:visited {
+  color: var(--visited);
 }
